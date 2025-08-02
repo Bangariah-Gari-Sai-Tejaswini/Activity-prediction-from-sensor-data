@@ -23,7 +23,7 @@ def main():
     st.subheader('''This application tool will predict the on going activity of the basis of sensor data provided.Fill the resepective fields''')
     st.image('image.webp')
     
-    rfid = st.selectbox("Enter the rfid configuration settings',['Config 1 (4 sensors)','Config 2 (3 sensors)'])
+    rfid = st.selectbox('Enter the rfid configuration settings',['Config 1 (4 sensors)','Config 2 (3 sensors)'])
     rfid_e = (lambda x: 3 if x=='Config 2 (3 sensors)' else 4)(rfid)
               
     ant_ID = st.selectbox('Select the Antenna ID',[1,2,3,4])
@@ -42,4 +42,5 @@ def main():
 if __name__ == '__main__':
                       main()
               
+
 
