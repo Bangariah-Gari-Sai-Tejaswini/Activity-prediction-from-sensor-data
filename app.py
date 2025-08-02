@@ -1,5 +1,5 @@
 
-import streamlit as t
+import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
@@ -42,5 +42,6 @@ def main():
 if __name__ == '__main__':
                       main()
               
+
 
 
